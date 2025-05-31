@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Callback</title>
+    <script>
+        if (window.location.hash) {
+            const token = window.location.hash.substring(1);
+            window.opener.postMessage(token, 'https://icouldntipidansame.github.io');
+            window.close();
+        }
+    </script>
+</head>
+<body>
+    <p>Authentication complete. You can close this tab.</p>
+</body>
+</html>
